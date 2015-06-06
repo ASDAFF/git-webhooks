@@ -1,0 +1,5 @@
+work_dir: ./
+repo_name: studiofact/git-webhooks
+script:
+  - git reset --hard HEAD
+  - git pull origin master
