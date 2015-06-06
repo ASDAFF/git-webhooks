@@ -37,7 +37,7 @@ use Citfact\GitWebHooks\DeployConfig;
 $logger = new Logger('WebHook Channel');
 $logger->pushHandler(new StreamHandler('./your.log'));
 
-$webHook = new BitbucketWebHook(json_decode($_POST['payload']));
+$webHook = new BitbucketWebHook(json_decode($_POST['payload'], true));
 $deploy = new DeployConfig('./webhook.yml');
 
 $workflow = new Workflow($webHook, $deploy, $logger);
