@@ -1,3 +1,8 @@
+GitWebHooks [![Build Status](https://secure.travis-ci.org/studiofact/git-webhooks.png)](http://travis-ci.org/studiofact/git-webhooks)
+====
+
+Простой автоматический деплой
+
 ## Установка через composer
 
 Используйте composer для управления зависимостями и установкой модуля
