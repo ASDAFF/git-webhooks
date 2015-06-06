@@ -11,10 +11,10 @@ composer require citfact/git-webhooks
 ```yaml
 work_dir: ./
 repo_name: author/test
-scripts:
+script:
   - git reset --hard HEAD
   - git pull origin master
-  - composer install
+  - composer install -q
   - npm install
   - bower install
   - gulp dist
